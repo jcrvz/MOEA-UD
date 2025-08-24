@@ -30,4 +30,7 @@ def uploadTestProblem(problem):
     for i in range(1, 11):
         if problem == 'ZCAT'+str(i):
             module = importlib.import_module('Problems.ZCAT.'+problem)
+    for i in range(1, 2):
+        if problem == 'RMCHS'+str(i):
+            module = importlib.import_module('Problems.RMCHS.'+problem)
     return getattr(module, 'parameters'), getattr(module, 'evaluate')

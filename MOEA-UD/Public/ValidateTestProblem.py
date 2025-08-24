@@ -46,7 +46,9 @@ def validateTestProblem(problem):
                       'IMOP8',
                       'VNT1',
                       'VNT2',
-                      'VNT3']
+                      'VNT3',
+                      'RMCHS1',
+                      'RMCHS2',]
     if problem in valid_problems:
         return True
     else:
